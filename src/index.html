@@ -3,12 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Curso Tailwind CSS</title>
+    <title>Curso Tailwind Medidas</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
-    <div class="h-[100px]">
-      <div class="bg-red-400 h-full text-center">Medidas en Tailwind CSS</div>
-    </div>
+  <body class="bg-blue-400">
+    <form action="" class="bg-white w-80 mx-auto mt-20 rounded-b-lg p-6">
+      <input
+        class="border border-gray-300 w-full px-3 py-2 mb-4 rounded-b-md disabled:bg-red-200"
+        type="text"
+        placeholder="Nombre"
+        disabled
+      />
+      <input
+        class="border border-gray-300 w-full px-3 py-2 rounded-b-md focus:outline-none focus:ring-2 focus:ring-purple-500 invalid:focus:ring-red-500 peer"
+        type="email"
+        placeholder="Email"
+      />
+      <p class="text-red-500 hidden peer-invalid:block">
+        El correo es incorrecto!!
+      </p>
+
+      <input
+        class="border border-gray-300 w-full px-3 py-2 mb-4 mt-4 rounded-md"
+        type="password"
+        placeholder="Contraseña"
+      />
+      <input
+        class="bg-blue-500 w-full py-2 text-white rounded-md cursor-pointer hover:bg-blue-300"
+        type="submit"
+        value="Enviar"
+      />
+    </form>
   </body>
 </html>
