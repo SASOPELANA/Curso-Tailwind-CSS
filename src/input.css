@@ -1,14 +1,9 @@
 @import "tailwindcss";
 
-:root {
-  --color-customBlue: #1e3a8a; /* Este es un ejemplo de color azul */
-}
-
-/* Agregar una clase para usar el color customBlue */
-.bg-customBlue {
-  background-color: var(--color-customBlue);
-}
-
-.text-customBlue {
-  color: var(--color-customBlue);
+@layer components {
+  .card {
+    @apply bg-red-500 w-40 h-40 grid 
+    place-content-center rounded-lg text-white
+    font-bold border-2 border-r-red-600 text-4xl;
+  }
 }
