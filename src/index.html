@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Curso Tailwind Medidas</title>
+    <title>Curso Tailwind Medidas y Pseudoclases</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="p-4">
@@ -20,5 +20,54 @@
     />
 
     <br /><br />
+
+    <!-- La pseudoclase `.file-wn` en Tailwind CSS es una clase que proporciona estilos predeterminados para elementos de entrada del tipo archivo. 
+         Este pseudoclase se define específicamente como un estilo personalizado por el usuario, 
+         lo que significa que puedes aplicar tus propios estilos a ella sin interferir con los estilos predefinidos de Tailwind CSS. -->
+
+    <input
+      type="file"
+      class="file:bg-violet-100 file:border-0 file:rounded-lg file:text-violet-700 file:font-semibold file:px-3 hover:file:bg-violet-300"
+    />
+
+    <br />
+    <br />
+
+    <!-- Pseudoclases marker: sirve para cambiar lso valores de uan lista  -->
+    <ol class="list-decimal ml-3 marker:text-orange-600 marker:font-bold">
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ol>
+
+    <br />
+    <br />
+
+    <!-- Pseudoclases selection: sirve para cambiar el dondo cuando seleciono un texto  -->
+    <p class="selection:bg-green-500 selection:text-white">
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+      ac turpis egestas. Sed cursus leo ac velit pulvinar, sit amet dignissim
+      arcu varius. Nullam nec odio id nulla lacinia viverra nec at sapien.
+      Aliquam erat volutpat. Sed euismod mi auctor risus aliquet malesuada.
+      Vivamus eu dui eu ipsum faucibus tincidunt. Integer non turpis in nibh
+      pharetra fermentum. Mauris ac urna vel diam vestibulum bibendum.
+    </p>
+
+    <br /><br />
+
+    <!-- La pseudoclase `:first-line` en Tailwind CSS se utiliza para aplicar estilos específicos al primer línea de un elemento de texto. 
+         Es útil para dar un estilo particular a la primera línea, como cambiar el color del texto o su tamaño, 
+         lo que puede mejorar la legibilidad y el diseño visual de tus páginas web. -->
+    <p
+      class="first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim:web
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
   </body>
 </html>
