@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tailwind - Grid</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="p-4">
+    <div class="grid grid-cols-2 gap-4 h-[100vh]">
+      <div class="card col-span-2">Header</div>
+      <div class="card col-span-2">Nav</div>
+      <div class="card">Section</div>
+      <div class="card">Article</div>
+      <div class="card row-[3/5] col-start-2">Aside</div>
+      <div class="card col-span-2">Footer</div>
+    </div>
+  </body>
+</html>
